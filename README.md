@@ -1,12 +1,11 @@
-# The Life Of Dino
+## The Life Of Dino
 
 ![The Life Of Dino](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/top-score.png)
 
 A simple artificial intelligence to teach Google Chrome's offline dinosaur to
 jump cactus, using Neural Networks and a simple Genetic Algorithm.
 
-## Installation
-
+## Installation:
 1. Install `Node.js` on your computer.
 
 2. Clone/download this folder to your computer.
@@ -21,8 +20,7 @@ jump cactus, using Neural Networks and a simple Genetic Algorithm.
    start learning. 
 
 
-## How does it work
-
+## How does it work:
 We have 3 different inputs read from the pixels of the screen:
 
 1. Distance from the next cactus
@@ -35,8 +33,7 @@ We have also, one output with 3 possible states:
 2. output > 0.55: Press UP key
 2. default: Release both keys
 
-## Genetic Algorithm
-
+## Genetic Algorithm:
 Each Generation consists of 12 neural networks (Genomes). 
 
 Each genome is tested with the game, by constantly mapping the read 
@@ -55,8 +52,7 @@ in the values/configurations of the Neural Network, creating a new genome.
 We do the cross-over/mutation until we get 12 genomes again, and repeat it constantly.
 
 
-## Implementation
-
+## Implementation:
 All the implementation was done using Node.js, with Synaptic (Neural Network library),
 and RobotJs (a library to read pixels and simulate key presses).
 
@@ -78,8 +74,7 @@ There are a few files in the project:
   "magic" happens, by running generations, doing "natural" selection, cross-over, mutation...
 
 
-### How to: Load a genome
-
+### How to Load a genome:
 1. Make sure Genome is inside `genomes` folder with a `.json` extension
 2. Run the program
 3. Click the list in the terminal
@@ -87,9 +82,8 @@ There are a few files in the project:
 5. Press `enter` (then, to start, press `s`)
 
 
-### Be aware of a game bug
-
-The dino game has a anoying bug: It starts to "drift" to the right with time
+### Be aware of a game bug:
+The dino game has an anoying bug: It starts to "drift" to the right with time
 making the dino to be wrong offseted from the origin of the game. That, makes
 the program to read the dino as a cactus, since it is the same color.
 
@@ -100,8 +94,8 @@ console in the element inspector:
 // Make sure the dino does not drift to the right
 setInterval(function (){Runner.instance_.tRex.xPos = 21}, 2000)
 ```
-## Credits
 
+## Credits:
 - [João Pedro](https://github.com/joaopedrovbs)
 - [Tony Ngan](https://github.com/tngan) **The idea came from him**
 
