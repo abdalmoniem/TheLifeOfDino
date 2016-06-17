@@ -1,4 +1,4 @@
-# IAMDinosaur
+# The Life Of Dino
 
 ![The Life Of Dino](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/top-score.png)
 
