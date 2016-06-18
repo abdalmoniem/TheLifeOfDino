@@ -1,25 +1,19 @@
 ## The Life Of Dino
 
-![The Life Of Dino Screenshot](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/top-score.png)
-![The Life Of Dino Video](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/video.mp4)
+![The Life Of Dino Screenshot](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/screenshot.png)
 
 A simple artificial intelligence to teach Google Chrome's offline dinosaur to
 jump cactus, using Neural Networks and a simple Genetic Algorithm.
 
 ## Installation:
 1. Install `Node.js` on your computer.
-
 2. Clone/download this folder to your computer.
-
 3. run `npm install` within this folder
-
 4. Open Chrome's dinosaur game and put aside the terminal (It MUST be on the same screen)
-   **(Tip: go to developer tools, and under network, set to offline )**
-
+	**(Tip: go to developer tools, and under network, set to offline )**
 5. run `node index` within this folder. If the game was located, it will move the cursor
    of the mouse to the origin of the `floor` of the dino. Press `s` key in the terminal to 
    start learning. 
-
 
 ## How does it work:
 We have 3 different inputs read from the pixels of the screen:
@@ -75,7 +69,7 @@ There are a few files in the project:
   "magic" happens, by running generations, doing "natural" selection, cross-over, mutation...
 
 
-### How to Load a genome:
+## How to Load a genome:
 1. Make sure Genome is inside `genomes` folder with a `.json` extension
 2. Run the program
 3. Click the list in the terminal
@@ -83,7 +77,7 @@ There are a few files in the project:
 5. Press `enter` (then, to start, press `s`)
 
 
-### Be aware of a game bug:
+## Be aware of a game bug:
 The dino game has an anoying bug: It starts to "drift" to the right with time
 making the dino to be wrong offseted from the origin of the game. That, makes
 the program to read the dino as a cactus, since it is the same color.
@@ -92,11 +86,5 @@ You can fix that by continuously refreshing the page, or, by pasting this code i
 console in the element inspector:
 
 ```
-// Make sure the dino does not drift to the right
 setInterval(function (){Runner.instance_.tRex.xPos = 21}, 2000)
 ```
-
-## Credits:
-- [João Pedro](https://github.com/joaopedrovbs)
-- [Tony Ngan](https://github.com/tngan) **The idea came from him**
-
