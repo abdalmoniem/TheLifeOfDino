@@ -1,6 +1,7 @@
 ## The Life Of Dino
 
-![The Life Of Dino](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/top-score.png)
+![The Life Of Dino Screenshot](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/top-score.png)
+![The Life Of Dino Video](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/video.mp4)
 
 A simple artificial intelligence to teach Google Chrome's offline dinosaur to
 jump cactus, using Neural Networks and a simple Genetic Algorithm.
