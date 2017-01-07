@@ -4,7 +4,7 @@
 ![The Life Of Dino Video](https://raw.githubusercontent.com/abdalmoniem/TheLifeOfDino/master/assets/video.mp4)
 
 A simple artificial intelligence to teach Google Chrome's offline dinosaur to
-jump cactus, using Neural Networks and a simple Genetic Algorithm.
+jump cactus, using a simple Genetic Algorithm.
 
 ## Installation:
 1. Install `Node.js` on your computer.
@@ -22,17 +22,17 @@ jump cactus, using Neural Networks and a simple Genetic Algorithm.
 
 
 ## How does it work:
-We have 3 different inputs read from the pixels of the screen:
+We have 3 different inputs to be read from the pixels of the screen:
 
-1. Distance from the next cactus
+1. Distance to the next cactus
 2. Length of the next cactus
-3. Speed of the current cactus
+3. Speed of the incomming cactus
 
-We have also, one output with 3 possible states:
+We also have, one output with 3 possible states:
 
 1. output < 0.45: Press DOWN key
 2. output > 0.55: Press UP key
-2. default: Release both keys
+3. default: Release both keys
 
 ## Genetic Algorithm:
 Each Generation consists of 12 neural networks (Genomes). 
@@ -59,10 +59,10 @@ and RobotJs (a library to read pixels and simulate key presses).
 
 There are a few files in the project:
 
-- `index.js`: It tight all things together.
+- `start.js`: It tight all things together.
 
 - `Scanner.js`: Basic abstraction layer above RobotJs library that reads the screen like
-  ray tracing. Also have some utilities functions.
+  ray tracing. It also has some utility functions.
 
 - `UI.js`: Global scope for the UI management. It initializes and also updates the screen
   on changes.
@@ -72,7 +72,7 @@ There are a few files in the project:
   triggering callbacks/listeners to real implementation.
 
 - `Learner.js`: It is the core implementation of the Genetic Algorithm. This is where
-  "magic" happens, by running generations, doing "natural" selection, cross-over, mutation...
+  "magic" happens, by running generations, doing "natural" selection, cross-over, mutation and so on...
 
 
 ### How to Load a genome:
@@ -95,8 +95,3 @@ console in the element inspector:
 // Make sure the dino does not drift to the right
 setInterval(function (){Runner.instance_.tRex.xPos = 21}, 2000)
 ```
-
-## Credits:
-- [João Pedro](https://github.com/joaopedrovbs)
-- [Tony Ngan](https://github.com/tngan) **The idea came from him**
-
