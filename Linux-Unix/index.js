@@ -9,10 +9,8 @@ var UI = require('./UI');
 // Configure Robotjs
 robot.setMouseDelay(1);
 
-
 // Initialize Game
 GameManipulator.findGamePosition();
-
 
 // Check for found game
 if (GameManipulator.offset) {
@@ -28,19 +26,15 @@ if (GameManipulator.offset) {
   process.exit();
 }
 
-
 // Initialize UI
 UI.init(GameManipulator, Learner);
-
 
 // Init Learner
 Learner.init(GameManipulator, UI, 12, 4, 0.2);
 
-
 // Start reading game state and sensors
 setInterval(GameManipulator.readSensors, 40);
 setInterval(GameManipulator.readGameState, 200);
-
 
 // Start game (Example of API usage)
 /*
