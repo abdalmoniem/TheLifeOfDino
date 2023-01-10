@@ -85,10 +85,6 @@ the program to read the dino as a cactus, since it is the same color.
 You can fix that by continuously refreshing the page, or, by pasting this code inside the 
 console in the element inspector:
 
-```
+```js
 setInterval(function (){Runner.instance_.tRex.xPos = 21}, 2000)
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> e1ed3d599db5675a8ebd18de78d39b6f38270321
